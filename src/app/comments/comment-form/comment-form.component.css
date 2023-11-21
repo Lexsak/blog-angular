@@ -1,0 +1,20 @@
+input[type="text"],
+input[type="email"] {
+  height: 60px;
+  padding-left: 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea{
+  resize: none;
+}
+
+.btn-sub {
+  transition: all 0.3s ease-in-out;
+  height: 58px;
+  border: none;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  width: 175px;
+}

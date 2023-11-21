@@ -23,6 +23,7 @@ input[type = text], input[type = email]{
 }
 
 .btn-sub{
+    transition: all 0.3s ease-in-out;
     height: 58px;
     border: none;
     font-size: 14px;

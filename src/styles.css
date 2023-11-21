@@ -61,3 +61,7 @@ body{
     color: rgb(172, 171, 171);
     font-size: 16px;
 }
+
+button:hover{
+    transform: scale(0.95);
+}
