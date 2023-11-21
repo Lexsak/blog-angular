@@ -6,7 +6,11 @@
 }
 
 .card-img-top {
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.category-container{
+  gap: 12px;
 }
 
 .design,

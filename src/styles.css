@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --primary-color: #026467 !important;
+    --primary-color: rgb(5, 80, 44) !important;
     --secondary-color: #E5F5EA;
     --body-text-color: #596392;
     --navbar-footer-color: #F9F9F9;
@@ -29,4 +29,8 @@ body{
 .shadow-effect{
     border: none!important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bt-theme{
+    background-color: var(--primary-color);
 }
