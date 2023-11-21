@@ -1,0 +1,38 @@
+.card {
+  margin: 50px;
+  max-width: 400px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px 25px 5px 5px;
+}
+
+.card-img-top {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.design,
+.featured,
+.views{
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.design {
+  background-color: #dc3545;
+}
+
+.featured {
+  background-color: #28a745;
+}
+
+.views{
+    background-color: #17a2b8;
+}
+
+.update-text{
+    color: rgb(172, 171, 171);
+    font-weight: bold;
+}
