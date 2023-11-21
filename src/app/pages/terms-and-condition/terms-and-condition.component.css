@@ -1,0 +1,17 @@
+section{
+    margin-top: 125px;
+}
+
+.bg-theme, .bg-secondary-theme{
+    border-radius: 50px;
+}
+
+.btn-sub{
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+}
