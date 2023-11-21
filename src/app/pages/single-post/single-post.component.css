@@ -3,3 +3,9 @@
     flex-direction: column;
     gap: 24px;
 }
+
+.design,
+.featured,
+.views{
+  padding: 5px 15px 10px 15px;
+}
