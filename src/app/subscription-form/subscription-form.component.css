@@ -1,0 +1,31 @@
+.card{
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    width: 1500px;
+}
+
+.subs-text{
+    width: 700px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+input[type = text], input[type = email]{
+    height: 60px;
+    padding-left: 20px;
+    font-size: 14px;
+    width: 700px;
+}
+
+.btn-sub{
+    height: 58px;
+    border: none;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    width: 700px;
+}
