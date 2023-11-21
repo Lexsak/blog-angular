@@ -1,0 +1,15 @@
+header{
+    height: 50px;
+    padding: 40px 20px;
+    background-color: var(--navbar-footer-color);
+}
+
+.logo{
+    font-size: 1.5em;
+    margin-right: 100px;
+}
+
+
+.nav-link{
+    text-transform: uppercase;
+}
