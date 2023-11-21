@@ -1,11 +1,11 @@
 .card{
     background-color: var(--secondary-color);
     border-radius: 50px;
-    width: 1500px;
+    width: 1400px;
 }
 
 .subs-text{
-    width: 700px;
+    width: 500px;
 }
 
 form{
@@ -19,7 +19,7 @@ input[type = text], input[type = email]{
     height: 60px;
     padding-left: 20px;
     font-size: 14px;
-    width: 700px;
+    width: 500px;
 }
 
 .btn-sub{
@@ -27,5 +27,5 @@ input[type = text], input[type = email]{
     border: none;
     font-size: 14px;
     background-color: var(--primary-color);
-    width: 700px;
+    width: 500px;
 }
