@@ -11,13 +11,28 @@
         blanditiis, obcaecati numquam sit!
       </p>
 
-      <form class="form-inline mt-5">
+      
+
+      <form
+        class="form-inline mt-5"
+        #subForm="ngForm"
+        (ngSubmit)="onSubmit(subForm.value)"
+        *ngIf="!isSubscribed"
+      >
         <div class="form-group">
           <input
             type="text"
             class="form-control shadow-effect input-text"
             placeholder="Your Name"
+            name="name"
+            #Name="ngModel"
+            ngModel
+            required
+            [ngClass]="{ 'is-invalid': Name.touched && Name.invalid }"
           />
+          <div class="text-danger" *ngIf="Name.touched && Name.invalid">
+            <div *ngIf="Name.errors?.['required']">Name is Required</div>
+          </div>
         </div>
 
         <div class="form-group">
@@ -25,13 +40,36 @@
             type="email"
             class="form-control shadow-effect"
             placeholder="Email Address"
+            name="email"
+            #Email="ngModel"
+            ngModel
+            required
+            email
+            [ngClass]="{ 'is-invalid': Email.touched && Email.invalid }"
           />
+          <div class="text-danger" *ngIf="Email.touched && Email.invalid">
+            <div *ngIf="Email.errors?.['required']">Email is Required</div>
+            <div *ngIf="Email.errors?.['email']">
+              Please Enter a Valid Email Address
+            </div>
+          </div>
+          <div class="text-danger mt-2" *ngIf="isEmailError">
+            Email is already used
+          </div>
         </div>
 
         <div class="form-group">
-          <button class="btn btn-info btn-block btn-sub">SUBSCRIBE</button>
+          <button
+            class="btn btn-info btn-block btn-sub"
+            [disabled]="subForm.invalid"
+          >
+            SUBSCRIBE
+          </button>
         </div>
       </form>
+      <div class="alert alert-info mt-5" *ngIf="isSubscribed">
+            Thank you for subscribing to our newsletter service.
+          </div>
     </div>
   </div>
 </div>

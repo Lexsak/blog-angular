@@ -1,7 +1,7 @@
 .card{
     background-color: var(--secondary-color);
     border-radius: 50px;
-    width: 1400px;
+    width: 1350px;
 }
 
 .subs-text{
@@ -29,4 +29,8 @@ input[type = text], input[type = email]{
     font-size: 14px;
     background-color: var(--primary-color);
     width: 500px;
+}
+
+.is-invalid{
+    border: 1px solid red!important;
 }
