@@ -2,3 +2,8 @@
     padding: 0 130px 130px 130px;
     background-color: var(--primary-color);
 }
+
+.marginos{
+    margin-left: 0;
+    margin-right: 0;
+}
