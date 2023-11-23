@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container"  *ngIf="postData">
   <div class="row">
     <div class="col-md-9 mt-5">
       <div class="card shadow-effect">
@@ -11,7 +11,7 @@
           <small class="text-center design">{{
             postData.category.category
           }}</small>
-          <small class="text-center featured ml-2">Featured</small>
+          <small class="text-center featured ml-2" *ngIf="postData.isFeatured">Featured</small>
           <small class="text-center views ml-2"
             >{{ postData.views }} - Views
           </small>
@@ -22,19 +22,15 @@
           <h1 class="mt-3 mb-3">
             {{ postData.title }}
           </h1>
-          <p [innerHTML]="postData.content">
-          </p>
+          <p [innerHTML]="postData.content"></p>
         </div>
       </div>
-
-      <app-comment-form></app-comment-form>
-      <app-comment-list></app-comment-list>
     </div>
 
     <div class="col-md-3 post-card-container mt-5">
-      <app-post-card></app-post-card>
-      <app-post-card></app-post-card>
-      <app-post-card></app-post-card>
+      <div *ngFor="let similarPost of similarPostArray">
+        <app-post-card [postData]="similarPost"></app-post-card>
+      </div>
     </div>
   </div>
 </div>
