@@ -1,21 +1,22 @@
-<div class="card">
+<div class="card" *ngIf="postData">
   <img
-    src="https://images.pexels.com/photos/1174932/pexels-photo-1174932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    src="{{postData.data.postImgPath}}"
     alt="post-image"
     class="card-img-top"
   />
   <div class="card-body">
     <div class="mb-3 d-flex flex-wrap category-container">
-      <small class="text-center design">Design</small>
-      <small class="text-center featured">Featured</small>
-      <small class="text-center views">72,255 - Views </small>
+      <small class="text-center design">{{postData.data.category.category}}</small>
+      <small class="text-center featured">{{postData.data.isFeatured}}</small>
+      <small class="text-center views">{{postData.data.views}} - Views </small>
     </div>
 
     <h5 class="mt-2">
-      Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Consectetur sed necessitatibus dolor
-      eveniet sint repellat veritatis magnam dicta porro non.
+      {{postData.data.title}} 
     </h5>
-    <small class="update-text">LAST UPDATED - SEP 20, 2023</small>
+    <p>
+      {{postData.data.exerpt}}
+    </p>
+    <small class="update-text">LAST UPDATED - {{postData.data.createdAt.toMillis() | date}}</small>
   </div>
 </div>

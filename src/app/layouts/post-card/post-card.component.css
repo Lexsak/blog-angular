@@ -3,12 +3,18 @@
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 25px 25px 5px 5px;
+  min-height: 500px;
 }
 
 .card-img-top {
   border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 
 .category-container{
   gap: 12px;
+}
+
+h5{
+  font-weight: bold;
 }
