@@ -15,6 +15,30 @@ header {
   color: var(--secondary-color);
 }
 
-.nav-link {
+a.nav-linkse {
+  color: black;
+  text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+}
+
+a.nav-linkse::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  transition: width 0.3s;
+}
+
+a.nav-linkse:hover::after {
+  width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  
+
 }

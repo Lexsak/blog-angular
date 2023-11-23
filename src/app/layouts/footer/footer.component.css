@@ -7,3 +7,12 @@ footer{
 .logo{
     font-size: 1.2em;
 }
+
+a{
+    color: var(--primary-color);
+    transition: all .3s ease-in-out;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
