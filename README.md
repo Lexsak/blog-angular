@@ -1,27 +1,34 @@
-# BlogAngular
+# Blog Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+Blog Angular is a dynamic web application that serves as a platform for managing and showcasing blog posts. The application, built with Angular and interacting with a backend database (Firebase), provides a robust set of features for content creation, category management, user subscriptions, and more.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Category Navigation**: The navigation bar dynamically updates with categories managed by the admin. Clicking on a category redirects users to a page displaying posts related to that category.
 
-## Code scaffolding
+- **Featured Posts**: The homepage displays a selection of featured posts to capture visitors' attention.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Latest Posts**: A section showcasing the most recent blog posts, dynamically pulled from the database.
 
-## Build
+- **Newsletter Subscription**: Users can subscribe to the newsletter, and admin can view and manage subscribers from the admin panel.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **About and Terms & Conditions Pages**: Simple pages providing information about the blog and its terms.
 
-## Running unit tests
+- **Detailed Post View**: Clicking on a post reveals a detailed view with tags, view count, last update timestamp, title, and description. On the right side, there are small tiles displaying similar posts from the same category.
+  
+- **Admin Panel**: [Here](https://github.com/Lexsak/blog-angular-dashboard)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Screenshots
 
-## Running end-to-end tests
+Here are some screenshots illustrating the key features of the Blog Angular application:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Homepage
+![image](https://github.com/Lexsak/blog-angular/assets/143490317/e9e79247-4128-4a2c-a766-660c32abd570)
+![image](https://github.com/Lexsak/blog-angular/assets/143490317/cf3a2c31-937f-4676-be48-d3887f3e3d71)
+![image](https://github.com/Lexsak/blog-angular/assets/143490317/a2639c9c-beec-49d2-b5ac-e7adb9381342)
 
-## Further help
+### Category Page
+![image](https://github.com/Lexsak/blog-angular/assets/143490317/0ae1c312-ac9d-44d3-bae5-5f3f794cfb3a)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Detailed Post View
+![image](https://github.com/Lexsak/blog-angular/assets/143490317/1e3fd8d3-f4b0-4056-accf-9ef1c5124104)
