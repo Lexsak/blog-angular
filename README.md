@@ -2,11 +2,15 @@
 
 Blog Angular is a dynamic web application that serves as a platform for managing and showcasing blog posts. The application, built with Angular and interacting with a backend database (Firebase), provides a robust set of features for content creation, category management, user subscriptions, and more.
 
+## Live Demo
+
+Check out the live [demo](https://angular-blog-4c2c0.web.app/) 
+
 ## Features
 
 - **Category Navigation**: The navigation bar dynamically updates with categories managed by the admin. Clicking on a category redirects users to a page displaying posts related to that category.
 
-- **Featured Posts**: The homepage displays a selection of featured posts to capture visitors' attention.
+- **Featured Posts**: The homepage displays a selection of featured posts to capture visitors attention.
 
 - **Latest Posts**: A section showcasing the most recent blog posts, dynamically pulled from the database.
 
